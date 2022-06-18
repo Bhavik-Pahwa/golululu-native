@@ -4,18 +4,30 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={styles.head}>
+      <Text style={styles.heading1}>Golululu</Text>
+      <Text style={styles.heading2}>B Lazy</Text>
       <StatusBar style="auto" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  head: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  heading1:{
+    fontSize: 80,
+    color:'black',
+    fontWeight: 'bold',
+    marginBottom: 50
+  },
+  heading2:{
+    fontSize: 40,
+    color: 'black',
+    fontWeight: 'bold'
+  }
 });
